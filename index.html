@@ -86,10 +86,17 @@ body{
 }
 
 /* ── HERO ── */
+.hero-ic{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;position:relative;z-index:1;}
+.hero-merkez{flex:1;min-width:260px;text-align:center;}
+.hero-kunye-kutu{flex-shrink:0;width:210px;background:rgba(201,162,74,0.08);border:1px solid rgba(201,162,74,0.30);border-radius:6px;padding:12px;display:flex;flex-direction:column;align-items:center;gap:8px;}
+.hero-kunye-kutu img{width:100%;border-radius:4px;filter:sepia(0.2) brightness(1.05);display:block;}
+.hero-kunye-etiket{font-family:'Amiri',serif;font-size:9px;letter-spacing:1.5px;color:rgba(232,201,122,0.50);text-align:center;text-transform:uppercase;}
+@media(max-width:680px){.hero-ic{flex-direction:column;}.hero-kunye-kutu{width:80%;max-width:280px;}}
+
 .hero{
   background:linear-gradient(160deg,#1C1410 0%,#2D1F0E 45%,#1B2D20 100%);
-  padding:110px 40px 70px;
-  text-align:center;
+  padding:90px 48px 60px;
+
   position:relative;
   overflow:hidden;
   border-bottom:3px solid var(--altin);
@@ -1003,7 +1010,14 @@ body{
 @media(max-width:620px){
   .bolum{padding:56px 16px 44px;}
   .bilgi-kutu{grid-template-columns:1fr 1fr;}
-  .hero{padding:90px 16px 56px;}
+  .hero-ic{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;position:relative;z-index:1;}
+.hero-merkez{flex:1;min-width:260px;text-align:center;}
+.hero-kunye-kutu{flex-shrink:0;width:210px;background:rgba(201,162,74,0.08);border:1px solid rgba(201,162,74,0.30);border-radius:6px;padding:12px;display:flex;flex-direction:column;align-items:center;gap:8px;}
+.hero-kunye-kutu img{width:100%;border-radius:4px;filter:sepia(0.2) brightness(1.05);display:block;}
+.hero-kunye-etiket{font-family:'Amiri',serif;font-size:9px;letter-spacing:1.5px;color:rgba(232,201,122,0.50);text-align:center;text-transform:uppercase;}
+@media(max-width:680px){.hero-ic{flex-direction:column;}.hero-kunye-kutu{width:80%;max-width:280px;}}
+
+.hero{padding:90px 16px 56px;}
   .hero-tam-ad{font-size:11px;letter-spacing:0.5px;}
   .zaman-cetveli::before{left:60px;}
   .zaman-yil{min-width:48px;font-size:11px;}
@@ -1054,16 +1068,29 @@ body{
 <header class="hero">
   <div class="hero-desen"></div>
   <div class="hero-cerceve"></div>
-  <div class="hero-ayet">ﷺ</div>
-  <div class="hero-tam-ad">Muhammed İzzeddin Ebû Sa'îd İbn-i Muhammed ed-Doğanhisârî el-Ezherî</div>
-  <h1 class="hero-isim">Hacı İzzet Hoca</h1>
-  <div class="hero-lakap">Doğanhisarlı Muhammed İzzeddin Efendi</div>
-  <div class="hero-tarih">1869 — 1939</div>
-  <div class="hero-unvanlar">
-    <span class="hero-unvan-rozet">Şeyhü'l-Arab</span>
-    <span class="hero-unvan-rozet">Muhaddis</span>
-    <span class="hero-unvan-rozet">Bestekâr</span>
-    <span class="hero-unvan-rozet">Müderris</span>
+  <div class="hero-ic">
+
+    <!-- Merkez: isim ve unvanlar -->
+    <div class="hero-merkez">
+      <div class="hero-ayet">ﷺ</div>
+      <div class="hero-tam-ad">Muhammed İzzeddin Ebû Sa'îd İbn-i Muhammed ed-Doğanhisârî el-Ezherî</div>
+      <h1 class="hero-isim">Hacı İzzet Hoca</h1>
+      <div class="hero-lakap">Doğanhisarlı Muhammed İzzeddin Efendi</div>
+      <div class="hero-tarih">1869 — 1939</div>
+      <div class="hero-unvanlar">
+        <span class="hero-unvan-rozet">Şeyhü'l-Arab</span>
+        <span class="hero-unvan-rozet">Muhaddis</span>
+        <span class="hero-unvan-rozet">Bestekâr</span>
+        <span class="hero-unvan-rozet">Müderris</span>
+      </div>
+    </div>
+
+    <!-- Sağ: El yazısı künye kutusu -->
+    <div class="hero-kunye-kutu">
+      <img src="Muhammed_b__Muhammed_Izzeddin_Ed-Doğanhisari__2_.png" alt="Kendi el yazısıyla künyesi" />
+      <div class="hero-kunye-etiket">Kendi El Yazısıyla Künyesi</div>
+    </div>
+
   </div>
 </header>
 
