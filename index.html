@@ -762,6 +762,28 @@ body{
   text-align:center;
 }
 
+/* ── İNDİRME TABLOSU ── */
+.indirme-tablo-sarg{max-width:860px;margin:0 auto 40px;background:var(--parca);border:1px solid var(--parca-ko);border-radius:8px;overflow:hidden;box-shadow:0 4px 24px rgba(28,20,16,0.10);}
+.indirme-tablo-baslik{background:linear-gradient(90deg,var(--yesil) 0%,var(--yesil-ac) 100%);color:var(--altin-ac);font-family:'Amiri',serif;font-size:16px;letter-spacing:0.5px;padding:13px 22px;display:flex;align-items:center;gap:10px;border-bottom:2px solid var(--altin-ko);}
+.indirme-tablo-ikon{font-size:18px;}
+.indirme-tablo{width:100%;border-collapse:collapse;font-size:13.5px;}
+.indirme-tablo thead tr{background:rgba(27,74,53,0.07);}
+.indirme-tablo thead th{padding:10px 16px;text-align:left;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--altin-ko);font-weight:600;border-bottom:1px solid var(--parca-ko);}
+.indirme-tablo thead th:first-child{width:38%;}
+.indirme-tablo thead th:nth-child(2){width:31%;}
+.indirme-tablo thead th:nth-child(3){width:31%;}
+.indirme-tablo tbody tr{border-bottom:1px solid var(--parca-ko);transition:background 0.15s;}
+.indirme-tablo tbody tr:last-child{border-bottom:none;}
+.indirme-tablo tbody tr:hover{background:rgba(201,162,74,0.07);}
+.indirme-tablo-ozel td:first-child{font-weight:600;color:var(--yesil);}
+.indirme-tablo tbody td{padding:10px 16px;color:var(--metin);vertical-align:middle;}
+.indirme-link{display:inline-flex;align-items:center;gap:6px;text-decoration:none;padding:5px 12px;border-radius:4px;font-size:12px;font-weight:600;letter-spacing:0.3px;transition:all 0.2s;white-space:nowrap;}
+.drive-link{background:rgba(27,74,53,0.10);color:var(--yesil);border:1px solid rgba(27,74,53,0.25);}
+.drive-link:hover{background:var(--yesil);color:var(--parca);}
+.arc-link{background:rgba(201,162,74,0.12);color:var(--altin-ko);border:1px solid rgba(201,162,74,0.35);}
+.arc-link:hover{background:var(--altin-ko);color:var(--parca);}
+.indirme-bos{color:#bbb;font-size:16px;text-align:center;}
+
 /* ── MEDYA ── */
 .medya-bolum-baslik{
   font-family:'Amiri',serif;
@@ -1333,6 +1355,120 @@ body{
     <div class="bolum-ayrac"><span></span><em>✦</em><span></span></div>
   </div>
 
+  <!-- İNDİRME TABLOSU -->
+  <div class="indirme-tablo-sarg">
+
+    <div class="indirme-tablo-baslik">
+      <span class="indirme-tablo-ikon">📂</span>
+      Eserler &amp; Belgeler — İndirme Bağlantıları
+    </div>
+
+    <table class="indirme-tablo">
+      <thead>
+        <tr>
+          <th>Eser / Belge</th>
+          <th>Google Drive</th>
+          <th>Archive.org</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="indirme-tablo-ozel">
+          <td>Külliyat Tümü</td>
+          <td><a href="https://drive.google.com/drive/folders/10WsfK4u2H04vmqF5aErofk4ltOJ-SgvB?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/@do_anhisari_izzet_hoca/uploads" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Yağmur Duası</td>
+          <td><a href="https://drive.google.com/drive/folders/1FUfwPLuq4ljRGAupfqCl-4iRRNLJtgKV?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/yagmur-duasi" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Resuliye Kasidesi</td>
+          <td><a href="https://drive.google.com/drive/folders/1BKT_KwIm9npYRL86gCRssA1GDToJJ3Uz?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/rasuliye-kasidesi" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Nefsi Miftahil Cinan</td>
+          <td><a href="https://drive.google.com/drive/folders/1Hj95F4yIlSXsi76xqSTH52iI3fedPt38?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/nefsi-miftahil-cinan" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Miraciye</td>
+          <td><a href="https://drive.google.com/drive/folders/1cDvClcGCzyP3ePPcbadZur6xrxnm_TiZ?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/miraciye-kitabi" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Mezar Resimleri</td>
+          <td><a href="https://drive.google.com/drive/folders/1hXFD7Xh291j_T-JeB9BCRM4lKYcE4QQQ?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/mezartasi-foto-3" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Mevlit ve Kasideleri</td>
+          <td><a href="https://drive.google.com/drive/folders/1p_Oi-33BHXgVkmDEUcxCmzcLOZ6zU1zD?usp=drive_link" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/muhammed-izzeddin-doganhisari-mevlid-ve-ilahileri-nota-ve-sozler" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Mevlid-i Efdal</td>
+          <td><a href="https://drive.google.com/drive/folders/1yORva1urqPbZ2AvnDM-ToNLDhSqiBhWr?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/mevli-di-efdal-tipki-basim" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Künyeleri Notları</td>
+          <td><a href="https://drive.google.com/drive/folders/1MhMvDblFm2s8uyj-drYlwa7Uq3wgv5rq?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/KunyeKitap" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Hayriye-i Muhammediye Kasidesi</td>
+          <td><a href="https://drive.google.com/drive/folders/1S8rYfRzc-nepv1JdZav6N6jWrzyPmYyL?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/hayriye-i-muhammediye-kasidesi-" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+        <tr>
+          <td>Biyografi</td>
+          <td><a href="https://drive.google.com/drive/folders/1UgpO2c4qOoxZc45fXaOmOiG1Iebb1PSC?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td><a href="https://archive.org/details/izzet-hoca-biyografisi_202604" target="_blank" class="indirme-link arc-link"><span>◉</span> Archive.org</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="indirme-tablo-baslik" style="margin-top:28px;">
+      <span class="indirme-tablo-ikon">🎬</span>
+      Ses &amp; Video Arşivi — İndirme Bağlantıları
+    </div>
+
+    <table class="indirme-tablo">
+      <thead>
+        <tr>
+          <th>İçerik</th>
+          <th>Google Drive</th>
+          <th>Archive.org</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Video — Enstrümansız</td>
+          <td><a href="https://drive.google.com/drive/folders/1Cr7_IJtKEnvumFT9AjMP_oZ7CljcYHCL?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td class="indirme-bos">—</td>
+        </tr>
+        <tr>
+          <td>Video — Enstrümanlı</td>
+          <td><a href="https://drive.google.com/drive/folders/1LXp84aeDhu0Y--bwGN8x4PlAP8yNA2xV?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td class="indirme-bos">—</td>
+        </tr>
+        <tr>
+          <td>Ses — Enstrümansız</td>
+          <td><a href="https://drive.google.com/drive/folders/1lSoRLne0AY7uVwxzt_Djg9qH358m-ENt?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td class="indirme-bos">—</td>
+        </tr>
+        <tr>
+          <td>Ses — Enstrümanlı</td>
+          <td><a href="https://drive.google.com/drive/folders/1xDpIYHPxO1caL-rrcS5ZA4nNL2F6XIiN?usp=sharing" target="_blank" class="indirme-link drive-link"><span>▲</span> Google Drive</a></td>
+          <td class="indirme-bos">—</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
   <p class="kulliyat-aciklama">
     Soldan bir belge seçin — sağ panelde doğrudan görüntüleyin veya indirin.
   </p>
@@ -1344,57 +1480,54 @@ body{
     <div class="belge-liste">
       <h4>ESERLER VE BELGELER</h4>
 
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Hayriye-i Muhammediye Kasidesi</div>
+      <div class="belge-oge active" onclick="belgeDegistir('yagmur-duasi', 'Yağmur Duası', this)">
+        <div class="belge-oge-ad">Yağmur Duası</div>
+        <div class="belge-oge-tur">📄 Dua metni</div>
+      </div>
+
+      <div class="belge-oge" onclick="belgeDegistir('rasuliye-kasidesi', 'Resuliye Kasidesi', this)">
+        <div class="belge-oge-ad">Resuliye Kasidesi</div>
         <div class="belge-oge-tur">📄 Kaside</div>
-        <span class="yakinda-rozet">YAKINDA</span>
       </div>
 
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Künyeleri Notları</div>
-        <div class="belge-oge-tur">📝 El yazması notlar</div>
-        <span class="yakinda-rozet">YAKINDA</span>
+      <div class="belge-oge" onclick="belgeDegistir('nefsi-miftahil-cinan', 'Nefsi Miftahil Cinan', this)">
+        <div class="belge-oge-ad">Nefsi Miftahil Cinan</div>
+        <div class="belge-oge-tur">📄 Eser</div>
       </div>
 
-      <div class="belge-oge active" onclick="belgeDegistir('muhammed-izzeddin-doganhisari-mevlid-ve-ilahileri-nota-ve-sozler', 'Mevlid-i Efdal — Nota ve Sözler', this)">
+      <div class="belge-oge" onclick="belgeDegistir('miraciye-kitabi', 'Miraciye', this)">
+        <div class="belge-oge-ad">Miraciye</div>
+        <div class="belge-oge-tur">📄 Kaside</div>
+      </div>
+
+      <div class="belge-oge" onclick="belgeDegistir('mezartasi-foto-3', 'Mezar Resimleri', this)">
+        <div class="belge-oge-ad">Mezar Resimleri</div>
+        <div class="belge-oge-tur">🖼 Fotoğraf arşivi</div>
+      </div>
+
+      <div class="belge-oge" onclick="belgeDegistir('muhammed-izzeddin-doganhisari-mevlid-ve-ilahileri-nota-ve-sozler', 'Mevlit ve Kasideleri', this)">
+        <div class="belge-oge-ad">Mevlit ve Kasideleri</div>
+        <div class="belge-oge-tur">📜 Derleme</div>
+      </div>
+
+      <div class="belge-oge" onclick="belgeDegistir('mevli-di-efdal-tipki-basim', 'Mevlid-i Efdal', this)">
         <div class="belge-oge-ad">Mevlid-i Efdal</div>
         <div class="belge-oge-tur">🎼 Nota ve sözler</div>
       </div>
 
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Mevlit ve Kasideleri</div>
-        <div class="belge-oge-tur">📜 Derleme</div>
-        <span class="yakinda-rozet">YAKINDA</span>
+      <div class="belge-oge" onclick="belgeDegistir('KunyeKitap', 'Künyeleri Notları', this)">
+        <div class="belge-oge-ad">Künyeleri Notları</div>
+        <div class="belge-oge-tur">📝 El yazması notlar</div>
       </div>
 
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Mezar Resimleri</div>
-        <div class="belge-oge-tur">🖼 Fotoğraf arşivi</div>
-        <span class="yakinda-rozet">YAKINDA</span>
-      </div>
-
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Miraciye</div>
+      <div class="belge-oge" onclick="belgeDegistir('hayriye-i-muhammediye-kasidesi-', 'Hayriye-i Muhammediye Kasidesi', this)">
+        <div class="belge-oge-ad">Hayriye-i Muhammediye Kasidesi</div>
         <div class="belge-oge-tur">📄 Kaside</div>
-        <span class="yakinda-rozet">YAKINDA</span>
       </div>
 
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Nefsi Miftahil Cinan</div>
-        <div class="belge-oge-tur">📄 Eser</div>
-        <span class="yakinda-rozet">YAKINDA</span>
-      </div>
-
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Resuliye Kasidesi</div>
-        <div class="belge-oge-tur">📄 Kaside</div>
-        <span class="yakinda-rozet">YAKINDA</span>
-      </div>
-
-      <div class="belge-oge beklemede">
-        <div class="belge-oge-ad">Yağmur Duası</div>
-        <div class="belge-oge-tur">📄 Dua metni</div>
-        <span class="yakinda-rozet">YAKINDA</span>
+      <div class="belge-oge" onclick="belgeDegistir('izzet-hoca-biyografisi_202604', 'Biyografi', this)">
+        <div class="belge-oge-ad">Biyografi</div>
+        <div class="belge-oge-tur">📖 Biyografi</div>
       </div>
 
     </div>
@@ -1402,12 +1535,12 @@ body{
     <!-- Sağ: Görüntüleyici -->
     <div class="belge-gosterici">
       <div class="belge-gosterici-baslik">
-        <span id="belgePencereBaslik">Mevlid-i Efdal — Nota ve Sözler</span>
-        <a id="belgeDirekLink" href="https://archive.org/details/muhammed-izzeddin-doganhisari-mevlid-ve-ilahileri-nota-ve-sozler" target="_blank">↗ Archive.org'da Aç</a>
+        <span id="belgePencereBaslik">Yağmur Duası</span>
+        <a id="belgeDirekLink" href="https://archive.org/details/yagmur-duasi" target="_blank">↗ Archive.org'da Aç</a>
       </div>
       <iframe
         id="belgePencere"
-        src="https://archive.org/embed/muhammed-izzeddin-doganhisari-mevlid-ve-ilahileri-nota-ve-sozler"
+        src="https://archive.org/embed/yagmur-duasi"
         allowfullscreen
         allow="autoplay; fullscreen; storage-access"
         referrerpolicy="no-referrer"
