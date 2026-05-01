@@ -853,6 +853,68 @@ body{
   text-align:center;
 }
 
+/* ── İNDİRME LİSTESİ ── */
+.indirme-liste{
+  max-width:700px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.indirme-satir{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:var(--parca);
+  border:1px solid var(--parca-ko);
+  border-left:4px solid var(--yesil);
+  border-radius:0 6px 6px 0;
+  padding:18px 22px;
+  text-decoration:none;
+  color:var(--metin);
+  transition:all 0.2s;
+}
+
+.indirme-satir:hover{
+  border-left-color:var(--altin);
+  background:rgba(201,162,74,0.08);
+  transform:translateX(4px);
+}
+
+.indirme-satir.beklemede{
+  opacity:0.5;
+  pointer-events:none;
+  border-left-color:var(--parca-ko);
+}
+
+.indirme-ikon{
+  font-size:20px;
+  flex-shrink:0;
+}
+
+.indirme-ad{
+  flex:1;
+  font-family:'Amiri',serif;
+  font-size:17px;
+  font-weight:700;
+  color:var(--yesil);
+}
+
+.indirme-ok{
+  font-size:16px;
+  color:var(--altin-ko);
+  flex-shrink:0;
+}
+
+.indirme-bekleme{
+  font-size:11px;
+  color:var(--altin-ko);
+  letter-spacing:1px;
+  font-style:italic;
+  flex-shrink:0;
+}
+
 /* ── ALT BİLGİ ── */
 .alt-bilgi{
   background:var(--koyu);
@@ -1045,6 +1107,8 @@ body{
     <a href="#hayati">Hayatı</a>
     <a href="#kulliyati">Külliyatı</a>
     <a href="#medya">Medya</a>
+    <a href="#indirmeler">İndirmeler</a>
+    <a href="#yarisma">Yarışma</a>
     <a href="#haberler">Haberler</a>
   </div>
 </nav>
@@ -1610,6 +1674,50 @@ body{
     </div>
   </div>
 
+</section>
+
+<!-- İNDİRMELER -->
+<section class="bolum" id="indirmeler">
+  <div class="bolum-ust">
+    <div class="bolum-sut">Dosyalar</div>
+    <h2 class="bolum-baslik">İndirmeler</h2>
+    <div class="bolum-ayrac"><span></span><em>✦</em><span></span></div>
+  </div>
+
+  <div class="indirme-liste">
+    <a href="https://drive.google.com/file/d/1qt1fS_4aSveFviUbKqBPYFGftKH_r3yU/view?usp=drive_link" target="_blank" class="indirme-satir">
+      <span class="indirme-ikon">📥</span>
+      <span class="indirme-ad">Hacı İzzet Hoca İlahileri</span>
+      <span class="indirme-ok">↗</span>
+    </a>
+    <a href="#" class="indirme-satir beklemede">
+      <span class="indirme-ikon">📥</span>
+      <span class="indirme-ad">Mevlid-i Efdal — Tam</span>
+      <span class="indirme-bekleme">Link eklenecek</span>
+    </a>
+  </div>
+</section>
+
+<!-- YARIŞMA -->
+<section class="bolum" id="yarisma">
+  <div class="bolum-ust">
+    <div class="bolum-sut">Mevlid Okuma Yarışması</div>
+    <h2 class="bolum-baslik">Yarışma</h2>
+    <div class="bolum-ayrac"><span></span><em>✦</em><span></span></div>
+  </div>
+
+  <div class="indirme-liste">
+    <a href="#" class="indirme-satir beklemede">
+      <span class="indirme-ikon">📄</span>
+      <span class="indirme-ad">Yarışma Şartnamesi</span>
+      <span class="indirme-bekleme">Link eklenecek</span>
+    </a>
+    <a href="#" class="indirme-satir beklemede">
+      <span class="indirme-ikon">📂</span>
+      <span class="indirme-ad">Kaynaklar</span>
+      <span class="indirme-bekleme">Link eklenecek</span>
+    </a>
+  </div>
 </section>
 
 <!-- HABERLER -->
